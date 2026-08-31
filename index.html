@@ -1,27 +1,1223 @@
+```html
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link data-mgx-overview="icon" rel="icon" href="https://public-frontend-1300249583.cos.ap-nanjing.myqcloud.com/commonfile/DefaultAppLogo.png" />
-    <title data-mgx-overview="title">Vedam Sports Club</title>
-    <link rel="stylesheet" href="./style.css">
-  <meta data-mgx-overview="description" name="description" content="Your premium multi-sport destination — discover events, join a community, and elevate your game." />
-  <meta data-mgx-overview="og:title" property="og:title" content="Vedam Sports Club" />
-  <meta data-mgx-overview="og:description" property="og:description" content="Your premium multi-sport destination — discover events, join a community, and elevate your game." />
-  <meta data-mgx-overview="og:image" property="og:image" content="https://public-frontend-1300249583.cos.ap-nanjing.myqcloud.com/commonfile/DefaultAppLogo.png" />
-  <meta data-mgx-overview="twitter:title" name="twitter:title" content="Vedam Sports Club" />
-  <meta data-mgx-overview="twitter:description" name="twitter:description" content="Your premium multi-sport destination — discover events, join a community, and elevate your game." />
-  <meta data-mgx-overview="twitter:image" name="twitter:image" content="https://public-frontend-1300249583.cos.ap-nanjing.myqcloud.com/commonfile/DefaultAppLogo.png" />
+  <meta charset="UTF-8" />
+
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0"
+  />
+
+  <meta
+    name="description"
+    content="Vedam Sports Club — compete, connect, and grow through sport."
+  />
+
+  <title>Vedam Sports Club</title>
+
+  <!-- Existing stylesheet -->
+  <link rel="stylesheet" href="style.css" />
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap"
+    rel="stylesheet"
+  />
+
+  <link
+    rel="icon"
+    href="assets/favicon.png"
+    type="image/png"
+  />
 </head>
 
 <body>
-    <div class="container">
-        <h1>Welcome to HTML Project</h1>
-        <p>This is a basic HTML template.</p>
-    </div>
-    <script type="module" src="./script.js"></script>
-</body>
 
+  <!-- =========================================================
+       NAVIGATION
+  ========================================================== -->
+
+  <header class="site-header" data-nav>
+
+    <nav class="navbar" aria-label="Main navigation">
+
+      <a class="brand" href="#home" aria-label="Vedam Sports Club home">
+
+        <span class="brand-mark" aria-hidden="true">
+          VS
+        </span>
+
+        <span class="brand-text">
+          <strong>VEDAM</strong>
+          <span>SPORTS CLUB</span>
+        </span>
+
+      </a>
+
+      <div class="nav-links">
+
+        <a class="nav-link" href="#home">Home</a>
+
+        <a class="nav-link" href="#about">About</a>
+
+        <a class="nav-link" href="#sports">Sports</a>
+
+        <a class="nav-link" href="#events">Events</a>
+
+        <a class="nav-link" href="#community">Community</a>
+
+        <a class="nav-link" href="#contact">Contact</a>
+
+      </div>
+
+      <div class="nav-actions">
+
+        <a class="button button--small button--outline" href="#login">
+          Member Login
+        </a>
+
+        <a class="button button--small" href="#join">
+          Join Club
+        </a>
+
+      </div>
+
+      <button
+        class="menu-toggle"
+        type="button"
+        data-drawer-toggle
+        aria-expanded="false"
+        aria-label="Open menu"
+      >
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+    </nav>
+
+    <!-- Mobile drawer -->
+
+    <div class="mobile-drawer" data-drawer>
+
+      <div class="mobile-drawer__inner">
+
+        <a class="nav-link" href="#home">Home</a>
+        <a class="nav-link" href="#about">About</a>
+        <a class="nav-link" href="#sports">Sports</a>
+        <a class="nav-link" href="#events">Events</a>
+        <a class="nav-link" href="#community">Community</a>
+        <a class="nav-link" href="#contact">Contact</a>
+
+        <div class="mobile-drawer__actions">
+
+          <a class="button button--outline" href="#login">
+            Member Login
+          </a>
+
+          <a class="button" href="#join">
+            Join Vedam Sports
+          </a>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </header>
+
+
+  <main>
+
+    <!-- =========================================================
+         HERO
+    ========================================================== -->
+
+    <section class="hero" id="home">
+
+      <div class="hero__background"></div>
+
+      <div class="container hero__grid">
+
+        <div class="hero__content" data-reveal>
+
+          <p class="eyebrow">
+            VEDAM SPORTS CLUB
+          </p>
+
+          <h1>
+            Play hard.
+            <span>Grow together.</span>
+          </h1>
+
+          <p class="hero__description">
+            A vibrant sports community built for students who want
+            to compete, connect, stay active, and become better
+            versions of themselves.
+          </p>
+
+          <div class="hero__actions">
+
+            <a class="button button--large" href="#sports">
+              Explore Sports
+              <span aria-hidden="true">→</span>
+            </a>
+
+            <a class="button button--large button--ghost" href="#join">
+              Become a Member
+            </a>
+
+          </div>
+
+          <div class="hero__meta">
+
+            <div>
+              <strong>10+</strong>
+              <span>Sports</span>
+            </div>
+
+            <div>
+              <strong>500+</strong>
+              <span>Members</span>
+            </div>
+
+            <div>
+              <strong>50+</strong>
+              <span>Events</span>
+            </div>
+
+          </div>
+
+        </div>
+
+
+        <div class="hero__visual" data-reveal>
+
+          <div class="hero-card">
+
+            <div class="hero-card__image">
+              <img
+                src="assets/hero-sports.jpg"
+                alt="Vedam students playing sports"
+              />
+            </div>
+
+            <div class="hero-card__content">
+
+              <span class="hero-card__tag">
+                THIS WEEK
+              </span>
+
+              <h2>
+                Campus Sports
+                Championship
+              </h2>
+
+              <p>
+                Compete. Represent. Make your mark.
+              </p>
+
+              <a href="#events">
+                View fixtures →
+              </a>
+
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+      <div class="hero__scroll">
+        <span>Scroll to explore</span>
+        <span class="hero__scroll-line"></span>
+      </div>
+
+    </section>
+
+
+    <!-- =========================================================
+         INTRO / ABOUT
+    ========================================================== -->
+
+    <section class="section section--light" id="about">
+
+      <div class="container">
+
+        <div class="split-heading" data-reveal>
+
+          <div>
+
+            <p class="eyebrow">
+              MORE THAN A GAME
+            </p>
+
+            <h2>
+              Sport is where
+              <span>community happens.</span>
+            </h2>
+
+          </div>
+
+          <div>
+
+            <p class="section-intro">
+              Vedam Sports Club brings students together through
+              competition, fitness, friendship and unforgettable
+              campus experiences.
+            </p>
+
+            <a class="text-link" href="#community">
+              Discover our community →
+            </a>
+
+          </div>
+
+        </div>
+
+
+        <div class="feature-grid">
+
+          <article class="feature-card" data-reveal>
+
+            <span class="feature-card__number">01</span>
+
+            <div class="feature-card__icon">
+              ⚡
+            </div>
+
+            <h3>
+              Compete
+            </h3>
+
+            <p>
+              Represent your house, batch and campus in regular
+              tournaments and competitive fixtures.
+            </p>
+
+          </article>
+
+
+          <article class="feature-card" data-reveal>
+
+            <span class="feature-card__number">02</span>
+
+            <div class="feature-card__icon">
+              ◉
+            </div>
+
+            <h3>
+              Connect
+            </h3>
+
+            <p>
+              Meet people beyond your classroom and build friendships
+              through shared passions.
+            </p>
+
+          </article>
+
+
+          <article class="feature-card" data-reveal>
+
+            <span class="feature-card__number">03</span>
+
+            <div class="feature-card__icon">
+              ↗
+            </div>
+
+            <h3>
+              Grow
+            </h3>
+
+            <p>
+              Develop discipline, leadership, teamwork and confidence
+              that stay with you beyond the playing field.
+            </p>
+
+          </article>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- =========================================================
+         STATS
+    ========================================================== -->
+
+    <section class="stats-section">
+
+      <div class="container">
+
+        <div class="stats-grid">
+
+          <div class="stat" data-reveal>
+            <strong data-count-to="500">0</strong>
+            <span>Active Members</span>
+          </div>
+
+          <div class="stat" data-reveal>
+            <strong data-count-to="12">0</strong>
+            <span>Sports</span>
+          </div>
+
+          <div class="stat" data-reveal>
+            <strong data-count-to="50">0</strong>
+            <span>Annual Fixtures</span>
+          </div>
+
+          <div class="stat" data-reveal>
+            <strong data-count-to="20">0</strong>
+            <span>Student Teams</span>
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- =========================================================
+         SPORTS
+    ========================================================== -->
+
+    <section class="section" id="sports">
+
+      <div class="container">
+
+        <div class="section-heading" data-reveal>
+
+          <div>
+
+            <p class="eyebrow">
+              FIND YOUR GAME
+            </p>
+
+            <h2>
+              Pick your
+              <span>arena.</span>
+            </h2>
+
+          </div>
+
+          <p>
+            Whether you love fast-paced competition or just want
+            to stay active, there is a place for you at Vedam.
+          </p>
+
+        </div>
+
+
+        <div class="sports-grid">
+
+          <article class="sport-card sport-card--large" data-reveal>
+
+            <img
+              src="assets/sport-cricket.jpg"
+              alt="Cricket at Vedam Sports Club"
+            />
+
+            <div class="sport-card__overlay">
+
+              <span>01</span>
+
+              <h3>Cricket</h3>
+
+              <p>
+                Teams • Tournaments • Practice
+              </p>
+
+            </div>
+
+          </article>
+
+
+          <article class="sport-card" data-reveal>
+
+            <img
+              src="assets/sport-football.jpg"
+              alt="Football at Vedam Sports Club"
+            />
+
+            <div class="sport-card__overlay">
+
+              <span>02</span>
+
+              <h3>Football</h3>
+
+              <p>
+                5-a-side • League • Training
+              </p>
+
+            </div>
+
+          </article>
+
+
+          <article class="sport-card" data-reveal>
+
+            <img
+              src="assets/sport-basketball.jpg"
+              alt="Basketball at Vedam Sports Club"
+            />
+
+            <div class="sport-card__overlay">
+
+              <span>03</span>
+
+              <h3>Basketball</h3>
+
+              <p>
+                3x3 • 5x5 • Open Play
+              </p>
+
+            </div>
+
+          </article>
+
+
+          <article class="sport-card" data-reveal>
+
+            <img
+              src="assets/sport-badminton.jpg"
+              alt="Badminton at Vedam Sports Club"
+            />
+
+            <div class="sport-card__overlay">
+
+              <span>04</span>
+
+              <h3>Badminton</h3>
+
+              <p>
+                Singles • Doubles • Coaching
+              </p>
+
+            </div>
+
+          </article>
+
+
+          <article class="sport-card" data-reveal>
+
+            <img
+              src="assets/sport-table-tennis.jpg"
+              alt="Table tennis at Vedam Sports Club"
+            />
+
+            <div class="sport-card__overlay">
+
+              <span>05</span>
+
+              <h3>Table Tennis</h3>
+
+              <p>
+                Singles • Doubles • Challenges
+              </p>
+
+            </div>
+
+          </article>
+
+
+          <article class="sport-card sport-card--accent" data-reveal>
+
+            <div class="sport-card__accent-content">
+
+              <span class="eyebrow">
+                MORE TO EXPLORE
+              </span>
+
+              <h3>
+                And that's
+                <em>not all.</em>
+              </h3>
+
+              <p>
+                Athletics, volleyball, chess, fitness and more.
+              </p>
+
+              <a class="text-link" href="#contact">
+                Ask about a sport →
+              </a>
+
+            </div>
+
+          </article>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- =========================================================
+         EVENTS
+    ========================================================== -->
+
+    <section class="section section--dark" id="events">
+
+      <div class="container">
+
+        <div class="events-header" data-reveal>
+
+          <div>
+
+            <p class="eyebrow eyebrow--light">
+              WHAT'S HAPPENING
+            </p>
+
+            <h2>
+              Upcoming
+              <span>fixtures.</span>
+            </h2>
+
+          </div>
+
+          <span class="events-count" data-events-count>
+            0 fixtures
+          </span>
+
+        </div>
+
+
+        <div class="filter-bar" data-filters>
+
+          <button
+            class="filter-chip"
+            type="button"
+            data-filter="all"
+            aria-pressed="true"
+          >
+            All
+          </button>
+
+          <button
+            class="filter-chip"
+            type="button"
+            data-filter="cricket"
+            aria-pressed="false"
+          >
+            Cricket
+          </button>
+
+          <button
+            class="filter-chip"
+            type="button"
+            data-filter="football"
+            aria-pressed="false"
+          >
+            Football
+          </button>
+
+          <button
+            class="filter-chip"
+            type="button"
+            data-filter="basketball"
+            aria-pressed="false"
+          >
+            Basketball
+          </button>
+
+          <button
+            class="filter-chip"
+            type="button"
+            data-filter="badminton"
+            aria-pressed="false"
+          >
+            Badminton
+          </button>
+
+        </div>
+
+
+        <div class="events-list" data-events>
+
+          <article
+            class="event-card"
+            data-sport="cricket"
+            data-reveal
+          >
+
+            <div class="event-date">
+              <strong>14</strong>
+              <span>SEP</span>
+            </div>
+
+            <div class="event-info">
+
+              <span class="event-sport">
+                CRICKET
+              </span>
+
+              <h3>
+                Vedam Inter-Batch Cricket
+              </h3>
+
+              <p>
+                Main Ground • 4:00 PM
+              </p>
+
+            </div>
+
+            <a href="#contact" class="event-action">
+              Details →
+            </a>
+
+          </article>
+
+
+          <article
+            class="event-card"
+            data-sport="football"
+            data-reveal
+          >
+
+            <div class="event-date">
+              <strong>18</strong>
+              <span>SEP</span>
+            </div>
+
+            <div class="event-info">
+
+              <span class="event-sport">
+                FOOTBALL
+              </span>
+
+              <h3>
+                Campus Football League
+              </h3>
+
+              <p>
+                Football Arena • 5:30 PM
+              </p>
+
+            </div>
+
+            <a href="#contact" class="event-action">
+              Details →
+            </a>
+
+          </article>
+
+
+          <article
+            class="event-card"
+            data-sport="basketball"
+            data-reveal
+          >
+
+            <div class="event-date">
+              <strong>22</strong>
+              <span>SEP</span>
+            </div>
+
+            <div class="event-info">
+
+              <span class="event-sport">
+                BASKETBALL
+              </span>
+
+              <h3>
+                3x3 Basketball Night
+              </h3>
+
+              <p>
+                Basketball Court • 6:00 PM
+              </p>
+
+            </div>
+
+            <a href="#contact" class="event-action">
+              Details →
+            </a>
+
+          </article>
+
+
+          <article
+            class="event-card"
+            data-sport="badminton"
+            data-reveal
+          >
+
+            <div class="event-date">
+              <strong>27</strong>
+              <span>SEP</span>
+            </div>
+
+            <div class="event-info">
+
+              <span class="event-sport">
+                BADMINTON
+              </span>
+
+              <h3>
+                Open Badminton Championship
+              </h3>
+
+              <p>
+                Indoor Court • 3:00 PM
+              </p>
+
+            </div>
+
+            <a href="#contact" class="event-action">
+              Details →
+            </a>
+
+          </article>
+
+
+          <div
+            class="events-empty"
+            data-events-empty
+            hidden
+          >
+            No fixtures found for this sport.
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- =========================================================
+         COMMUNITY / PHILOSOPHY
+    ========================================================== -->
+
+    <section class="section section--cream" id="community">
+
+      <div class="container community-grid">
+
+        <div class="community-image" data-reveal>
+
+          <img
+            src="assets/community.jpg"
+            alt="Vedam Sports Club community"
+          />
+
+          <div class="community-badge">
+
+            <strong>01</strong>
+
+            <span>
+              TEAMWORK
+              <br />
+              MATTERS
+            </span>
+
+          </div>
+
+        </div>
+
+
+        <div class="community-content" data-reveal>
+
+          <p class="eyebrow">
+            THE VEDAM WAY
+          </p>
+
+          <h2>
+            Build the
+            <span>team.</span>
+            Become the
+            <span>player.</span>
+          </h2>
+
+          <p>
+            We believe sport teaches things no classroom can:
+            resilience after a loss, responsibility to a team,
+            courage under pressure and the joy of showing up
+            for something bigger than yourself.
+          </p>
+
+          <div class="community-points">
+
+            <div>
+              <span>01</span>
+              <strong>Inclusive by design</strong>
+              <p>
+                Beginners and experienced athletes play together.
+              </p>
+            </div>
+
+            <div>
+              <span>02</span>
+              <strong>Student-led</strong>
+              <p>
+                Members help shape tournaments, teams and events.
+              </p>
+            </div>
+
+            <div>
+              <span>03</span>
+              <strong>Always moving</strong>
+              <p>
+                Regular games keep campus life active and connected.
+              </p>
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- =========================================================
+         QUOTE
+    ========================================================== -->
+
+    <section class="quote-section">
+
+      <div class="container">
+
+        <div class="quote" data-reveal>
+
+          <span class="quote-mark">“</span>
+
+          <blockquote>
+            The best teams aren't built only
+            during the match.
+            They're built every day.
+          </blockquote>
+
+          <cite>
+            — Vedam Sports Club
+          </cite>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- =========================================================
+         JOIN CTA
+    ========================================================== -->
+
+    <section class="join-section" id="join">
+
+      <div class="container">
+
+        <div class="join-card" data-reveal>
+
+          <div class="join-card__content">
+
+            <p class="eyebrow">
+              READY TO PLAY?
+            </p>
+
+            <h2>
+              Your next
+              <span>game starts here.</span>
+            </h2>
+
+            <p>
+              Join the Vedam Sports Club and find your people,
+              your sport and your next challenge.
+            </p>
+
+          </div>
+
+          <div class="join-card__action">
+
+            <a class="button button--large" href="#contact">
+              Join Vedam Sports
+              <span aria-hidden="true">↗</span>
+            </a>
+
+            <small>
+              Open to all Vedam students
+            </small>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- =========================================================
+         MEMBER LOGIN
+    ========================================================== -->
+
+    <section class="section section--light" id="login">
+
+      <div class="container login-layout">
+
+        <div class="login-copy" data-reveal>
+
+          <p class="eyebrow">
+            MEMBER AREA
+          </p>
+
+          <h2>
+            Your club.
+            <span>Your dashboard.</span>
+          </h2>
+
+          <p>
+            Access your fixtures, teams, events and club updates
+            from one place.
+          </p>
+
+        </div>
+
+
+        <div class="login-card" data-reveal>
+
+          <form
+            data-login-form
+            novalidate
+          >
+
+            <div class="field">
+
+              <label for="username">
+                Member username
+              </label>
+
+              <input
+                id="username"
+                name="username"
+                type="text"
+                autocomplete="username"
+                placeholder="Enter your username"
+              />
+
+              <span class="field__error"></span>
+
+            </div>
+
+
+            <div class="field">
+
+              <div class="field-label-row">
+
+                <label for="password">
+                  Password
+                </label>
+
+                <button
+                  type="button"
+                  class="password-toggle"
+                  data-reveal-password
+                  aria-pressed="false"
+                >
+                  Show
+                </button>
+
+              </div>
+
+              <input
+                id="password"
+                name="password"
+                type="password"
+                autocomplete="current-password"
+                placeholder="Enter your password"
+              />
+
+              <span class="field__error"></span>
+
+            </div>
+
+
+            <button
+              class="button button--full"
+              type="submit"
+              data-login-submit
+            >
+              Sign in
+            </button>
+
+            <p
+              class="login-note"
+              data-login-note
+              hidden
+            ></p>
+
+          </form>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- =========================================================
+         CONTACT
+    ========================================================== -->
+
+    <section class="contact-section" id="contact">
+
+      <div class="container contact-grid">
+
+        <div data-reveal>
+
+          <p class="eyebrow eyebrow--light">
+            GET IN TOUCH
+          </p>
+
+          <h2>
+            Let's get
+            <span>you playing.</span>
+          </h2>
+
+          <p>
+            Have a question about a sport, team, tournament or
+            membership? Reach out to the Sports Club team.
+          </p>
+
+        </div>
+
+
+        <div class="contact-details" data-reveal>
+
+          <a href="mailto:sports@vedam.org">
+            <span>Email</span>
+            sports@vedam.org
+          </a>
+
+          <a href="tel:+919201010176">
+            <span>Phone</span>
+            +91 92010 10176
+          </a>
+
+          <div>
+            <span>Location</span>
+            Vedam Campus
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+
+  </main>
+
+
+  <!-- =========================================================
+       FOOTER
+  ========================================================== -->
+
+  <footer class="site-footer">
+
+    <div class="container">
+
+      <div class="footer-top">
+
+        <div class="footer-brand">
+
+          <a class="brand" href="#home">
+
+            <span class="brand-mark">
+              VS
+            </span>
+
+            <span class="brand-text">
+              <strong>VEDAM</strong>
+              <span>SPORTS CLUB</span>
+            </span>
+
+          </a>
+
+          <p>
+            Compete. Connect. Grow.
+          </p>
+
+        </div>
+
+
+        <div class="footer-links">
+
+          <div>
+
+            <strong>Explore</strong>
+
+            <a href="#about">About</a>
+            <a href="#sports">Sports</a>
+            <a href="#events">Events</a>
+            <a href="#community">Community</a>
+
+          </div>
+
+
+          <div>
+
+            <strong>Club</strong>
+
+            <a href="#join">Join Us</a>
+            <a href="#login">Member Login</a>
+            <a href="#contact">Contact</a>
+
+          </div>
+
+
+          <div>
+
+            <strong>Vedam</strong>
+
+            <a href="https://www.vedam.org/" target="_blank" rel="noopener">
+              Vedam School
+            </a>
+
+            <a href="#">
+              Privacy
+            </a>
+
+            <a href="#">
+              Terms
+            </a>
+
+          </div>
+
+        </div>
+
+      </div>
+
+
+      <div class="footer-bottom">
+
+        <span>
+          © <span data-year></span> Vedam Sports Club.
+          All rights reserved.
+        </span>
+
+        <span>
+          Built for the next generation.
+        </span>
+
+      </div>
+
+    </div>
+
+  </footer>
+
+
+  <!-- Existing JavaScript -->
+  <script src="script.js"></script>
+
+</body>
 </html>
+```
